@@ -21,3 +21,6 @@ shows the local commits ahead of your repository
 
 * **rollback**  
 undo last commit keeping the changes  
+
+* **squash**  
+squash previous commits into one
