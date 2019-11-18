@@ -5,6 +5,9 @@
 Alias are a easier way to type complex git commands on the terminal.
 These are the configurations I use.
 
+To open and edit the gitconfig file type on terminal:  
+`git config --global --edit`
+
 * **git lg**  
 better visual git log
 ![Image of git lg](https://github.com/iandrabedin/gitconfig/blob/master/images/git-lg.png)
