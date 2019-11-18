@@ -7,3 +7,5 @@ incoming = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white
 outgoing = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' @{u}..)
 
 rollback = reset --soft HEAD~1
+
+squash = "!f(){ git reset --soft HEAD~${1} && git commit --edit -m\"$(git log --format=%B --reverse HEAD..HEAD@{1})\"; };f"
